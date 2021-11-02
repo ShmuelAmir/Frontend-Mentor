@@ -10,12 +10,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: [https://github.com/ShmuelAmir/Frontend-Mentor/tree/master/Newbie/4.%20profile-card-component]
+- Live Site URL: [https://shmuelamir.github.io/Frontend-Mentor/tree/master/Newbie/4.%20profile-card-component]
 
 ## My process
 
@@ -27,4 +27,4 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@shmuelamir](https://www.frontendmentor.io/profile/yourusername)
