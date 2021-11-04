@@ -14,11 +14,6 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-### Links
-
-- Solution URL: [https://github.com/ShmuelAmir/Frontend-Mentor/tree/master/Newbie/four-card-feature-section]
-- Live Site URL: [https://ShmuelAmir.github.io/Frontend-Mentor]
-
 ## My process
 
 ### Built with
