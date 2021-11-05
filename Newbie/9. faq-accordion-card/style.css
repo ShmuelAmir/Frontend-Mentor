@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box-img {
+  position: absolute;
+  left: 265px;
+  top: 315px;
+  z-index: 999;
+}
+
+.container {
+  height: 500px;
+  background-color: white;
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  box-shadow: 0 15px 15px 5px hsl(273, 75%, 55%);
+  overflow: hidden;
+}
+
+.container > div {
+  width: 50%;
+}
+
+.images {
+  position: relative;
+}
+
+.images img {
+  position: absolute;
+}
+
+.b-img {
+  width: 200%;
+  aspect-ratio: 1 / 1;
+  left: -515px;
+  top: -270px;
+}
+
+.f-img {
+  width: 100%;
+  left: -75px;
+  top: 70px;
+  z-index: 30;
+}
+
+.text {
+  padding: 50px 75px 50px 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.box {
+  padding: 20px 0;
+  color: hsl(240, 6%, 50%);
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.que {
+  color: hsl(237, 12%, 33%);
+  font-size: 15px;
+}
+
+.que img {
+  margin-top: 10px;
+  float: right;
+  transition: all 0.5s ease;
+}
+
+.que:hover {
+  cursor: pointer;
+  color: hsl(240, 5%, 75%);
+}
+
+.active {
+  color: black;
+  font-weight: 700;
+}
+
+.active img {
+  transform: rotate(180deg);
+}
+
+.ans {
+  margin-top: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .box-img {
+    width: 100px;
+    height: 100px;
+    top: 110px;
+    left: 110px;
+  }
+
+  .container {
+    height: 575px;
+    width: 375px;
+    flex-direction: column;
+    overflow: visible;
+    margin-top: 125px;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+
+  .b-img {
+    src: url("images/bg-pattern-mobile.svg");
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    left: 45px;
+    top: -165px;
+  }
+
+  .f-img {
+    src: url("images/illustration-woman-online-mobile.svg");
+    width: 75%;
+    left: 45px;
+    top: -127px;
+    z-index: 30;
+  }
+
+  .text {
+    padding: 130px 40px 0 40px;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
