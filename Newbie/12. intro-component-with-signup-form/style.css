@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background: hsl(0, 100%, 74%) url("images/bg-intro-desktop.png");
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 150px;
+}
+
+body > * {
+  flex: 0 0 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+.left {
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.box {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.up {
+  font-weight: 600;
+  color: hsl(246, 25%, 77%);
+  background: hsl(248, 32%, 49%);
+  padding: 0.8em;
+  margin-bottom: 1em;
+}
+
+.up span {
+  color: white;
+}
+
+form {
+  background: white;
+  padding: 3em 2.5em;
+}
+
+.txt {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.8em 1.5em;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: black;
+  outline: 0;
+}
+
+form img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+form p {
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-size: 0.7rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+form:invalid input[type="submit"] {
+  opacity: 0.7;
+}
+
+.war {
+  display: none;
+}
+
+input:invalid + .war {
+  display: block;
+}
+
+input[type="submit"] {
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: hsl(154, 59%, 51%);
+  border: 0;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  opacity: 1;
+}
+
+.bottom {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: hsl(246, 25%, 77%);
+}
+
+.bottom span {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 1250px) {
+  body {
+    text-align: center;
+  }
+  .left {
+    margin-bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  body > * {
+    flex-basis: 400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .left {
+    padding: 0 1em;
+    margin-bottom: -100px;
+  }
+
+  .up {
+    padding: 1em 5em;
+  }
+
+  .bottom {
+    padding: 0 3em;
+  }
+}
