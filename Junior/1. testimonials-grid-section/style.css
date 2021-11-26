@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.grid {
+  max-width: 1250px;
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "one one two five"
+    "three four four five";
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: -2;
+}
+
+.card:nth-child(1) {
+  background-color: hsl(263, 55%, 52%);
+  grid-area: one;
+}
+
+.card:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: two;
+}
+
+.card:nth-child(3) {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: three;
+}
+
+.card:nth-child(4) {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: four;
+}
+
+.card:nth-child(5) {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: five;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+}
+
+.up {
+  color: hsl(0, 0%, 81%);
+}
+
+.buttom {
+  color: hsl(0, 0%, 50%);
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-block: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.card:nth-child(3) h2,
+.card:nth-child(5) h2 {
+  color: hsl(0, 0%, 30%);
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: hsl(0, 0%, 70%);
+}
+
+.qout-img {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  z-index: -1;
+}
