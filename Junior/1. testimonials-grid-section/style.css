@@ -24,6 +24,21 @@ body {
     "three four four five";
 }
 
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+    height: auto;
+  }
+  .grid {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+  }
+}
+
 .card {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
